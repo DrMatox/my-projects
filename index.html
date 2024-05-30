@@ -3,55 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Adam Haja Mohideen - Projects</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
         }
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 0;
-            width: 100%;
+            background-color: #0d47a1;
+            padding: 20px;
             text-align: center;
         }
-        .container {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            width: 80%;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1565c0;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #2196f3;
+            font-size: 2em;
         }
         .project {
-            margin: 10px 0;
+            margin-bottom: 20px;
         }
-        .project a {
-            text-decoration: none;
-            color: #007bff;
+        .project h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #64b5f6;
+        }
+        .project p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #0d47a1;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>My Projects</h1>
+        <h1>Adam Haja Mohideen - Projects</h1>
     </header>
-    <div class="container">
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to my project presentation page. Here, you will find details about the various projects I have worked on, ranging from cybersecurity investigations to incident response plans. Explore my work and feel free to reach out if you have any questions or collaboration ideas.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
         <div class="project">
-            <h2>Project 1</h2>
-            <p><a href="project1.pdf" target="_blank">View Project 1</a></p>
+            <h3>Project 1: Digital Investigation of Fraudulent Transactions</h3>
+            <p>Designed a framework incorporating behavioral profiling techniques and AI/ML technologies to detect and investigate fraudulent transactions.</p>
         </div>
         <div class="project">
-            <h2>Project 2</h2>
-            <p><a href="project2.pdf" target="_blank">View Project 2</a></p>
+            <h3>Project 2: Incident Response Plan for Brute Force Attacks</h3>
+            <p>Developed an incident response plan following the NIST standard to effectively mitigate and respond to brute force attacks.</p>
         </div>
-        <!-- Ajoutez plus de projets ici -->
-    </div>
+        <div class="project">
+            <h3>Project 3: Participation in ICTF 2024</h3>
+            <p>Focused on crypto, OSINT, and forensics challenges during the ICTF 2024 competition, enhancing my skills in these critical areas of cybersecurity.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a cybersecurity enthusiast currently in Malaysia for an exchange semester as part of my Master’s program. I have a strong interest in information security design, particularly in the areas of digital investigations and incident response. I have applied for the Master SeCReTS program at ENSIIE and am eager to continue expanding my knowledge and skills in this field.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please email me at <a href="mailto:your-email@example.com" style="color: #64b5f6;">your-email@example.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Adam Haja Mohideen. All rights reserved.</p>
+    </footer>
 </body>
 </html>
